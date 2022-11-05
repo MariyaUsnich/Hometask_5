@@ -1,6 +1,5 @@
 import Newsletter.*;
 
-import java.util.Scanner;
 
 public class Main {
 
@@ -9,8 +8,6 @@ public class Main {
         try {
             articles[0].toString();
         } catch (NullPointerException ex) {
-            System.out.println(ex.getMessage());
-        } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
         System.out.println("___NEWSLETTER CONTENT___");

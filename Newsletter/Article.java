@@ -24,20 +24,12 @@ public class Article {
     }
 
     public boolean Edit() {
-        Scanner scanner = new Scanner(System.in);
-        while (true) {
             System.out.print("Please enter the article name: ");
             name = new Scanner(System.in).nextLine();
             System.out.print("Please enter the article author: ");
             author = new Scanner(System.in).nextLine();
-            if (author == "Author1") {
-                return false;
-            } else {
-                return true;
-            }
+        return author != "Author1";
         }
-    }
-
     protected String name;
     protected String author;
 
