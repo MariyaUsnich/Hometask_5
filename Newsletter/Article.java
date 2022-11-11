@@ -1,5 +1,6 @@
 package Newsletter;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Article {
@@ -33,7 +34,7 @@ public class Article {
     }
 
     public boolean Edit() {
-        return author != "Author1";
+        return !Objects.equals(author, "Author1");
         }
     protected String name;
     protected String author;
