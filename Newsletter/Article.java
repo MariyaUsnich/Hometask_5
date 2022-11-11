@@ -14,7 +14,6 @@ public class Article {
         author = _author;
     }
 
-
     public String toString() {
         return name + " " + author;
     }
@@ -23,11 +22,17 @@ public class Article {
         System.out.println("In Russian");
     }
 
+    public void setName() {
+        System.out.print("Please enter the article name: ");
+        this.name = new Scanner(System.in).nextLine();
+    }
+
+    public void setAuthor() {
+        System.out.print("Please enter the article author: ");
+        this.author = new Scanner(System.in).nextLine();
+    }
+
     public boolean Edit() {
-            System.out.print("Please enter the article name: ");
-            name = new Scanner(System.in).nextLine();
-            System.out.print("Please enter the article author: ");
-            author = new Scanner(System.in).nextLine();
         return author != "Author1";
         }
     protected String name;

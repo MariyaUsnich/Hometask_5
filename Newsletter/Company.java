@@ -10,7 +10,7 @@ public class Company extends Article {
         super(_name, _author);
     }
 
-    private final String section = "BusinessInfo";
+    protected final String section = "BusinessInfo";
 
     public String toString() {
         return "Article: " + super.toString() + " / " + section;

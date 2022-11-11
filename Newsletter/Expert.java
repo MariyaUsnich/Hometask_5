@@ -20,7 +20,7 @@ public class Expert extends Article {
         System.out.println("May be translated");
     }
 
-    public final String section = "For_Business";
+    private final String section = "For_Business";
 
 
 }

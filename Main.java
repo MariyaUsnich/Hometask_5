@@ -4,7 +4,7 @@ import Newsletter.*;
 public class Main {
 
     public static void main(String[] args) {
-        Article[] articles = new Article[7];
+        Article[] articles = new Article[8];
         try {
             articles[0].toString();
         } catch (NullPointerException ex) {
@@ -18,6 +18,7 @@ public class Main {
         articles[4] = new Article("Name5", "Author1");
         articles[5] = new Company("Name6", "Company1");
         articles[6] = new Company("Name7", "Company2");
+        articles[7] = new Ad("Company2");
         for (Article article : articles) {
             System.out.print(article.toString());
             System.out.println();
@@ -31,6 +32,10 @@ public class Main {
         }
         System.out.println("-----------------------------------------------");
         Article newarticle = new Article();
+        newarticle.setName();
+        newarticle.setAuthor();
+        System.out.println(newarticle.toString());
         System.out.println("Needs editing: " + newarticle.Edit());
     }
 }
+
