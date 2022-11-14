@@ -25,17 +25,36 @@ public class Main {
             article.language();
             System.out.println();
         }
+        /*
+         ArrayList<Article> alArticles = new ArrayList<>();
+        alArticles.add(new Event("Name1", "Author1"));
+        alArticles.add(new Event("Name2", "Author1"));
+        alArticles.add(new Expert("Name3", "Author2"));
+        alArticles.add(new Expert("Name4", "Author3"));
+        alArticles.add(new Article("Name5", "Author1"));
+        alArticles.add(new Company("Name6", "Company1"));
+        alArticles.add(new Company("Name7", "Company2"));
+        alArticles.add(new Ad("Company2"));
+
+        for (Article article : alArticles) {
+                System.out.print(article.toString());
+                System.out.println();
+                article.language();
+                System.out.println();*/
         try {
             articles[10].language();
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
         }
         System.out.println("-----------------------------------------------");
-        Article newarticle = new Article();
-        newarticle.setName();
-        newarticle.setAuthor();
-        System.out.println(newarticle.toString());
-        System.out.println("Needs editing: " + newarticle.Edit());
+        while (true) {
+            Article newarticle = new Article();
+            newarticle.setName();
+            newarticle.setAuthor();
+            System.out.println(newarticle.toString());
+            System.out.println("Needs editing: " + newarticle.Edit());
+            if(newarticle.getName().isEmpty()) break;
+        }
     }
 }
 

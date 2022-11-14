@@ -12,6 +12,7 @@ public class Event extends Article {
 
     private final String section = "Events";
 
+    @Override
     public String toString() {
         return "Article: " + super.toString() + " / " + section;
     }

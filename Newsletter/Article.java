@@ -32,12 +32,15 @@ public class Article {
         System.out.print("Please enter the article author: ");
         this.author = new Scanner(System.in).nextLine();
     }
-
     public boolean Edit() {
-        return !Objects.equals(author, "Author1");
-        }
+        return !author.equals("Author1");
+        //return !Objects.equals(author, "Author1");
+    }
+
+    public String getName() {
+        return name;
+    }
+
     protected String name;
     protected String author;
-
-
 }

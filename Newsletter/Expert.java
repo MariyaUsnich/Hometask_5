@@ -10,6 +10,7 @@ public class Expert extends Article {
         super(_name, _author);
     }
 
+    @Override
     public String toString() {
         return "Article: " + super.toString() + " / " + section;
     }
